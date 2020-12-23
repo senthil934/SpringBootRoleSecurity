@@ -1,0 +1,11 @@
+ CREATE TABLE user (user_id int(11) primary key,username varchar(45) NOT NULL, password varchar(64) NOT NULL,
+  enabled tinyint(4) DEFAULT 1);    
+  
+create table role(role_id int primary key,name varchar(20));
+
+insert into role values(1,'USER');
+insert into role values(2,'CREATOR');
+insert into role values(3,'EDITOR');
+insert into role values(4,'ADMIN');
+
+ 
